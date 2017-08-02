@@ -50,3 +50,45 @@ var myFunction;
 // myFunction();
 myFunction = multiplicar;
 console.log(myFunction(3, 3));
+// objects
+var userData = {
+    name: "IGOR",
+    age: 37
+};
+// userData = {
+//     a: "hello",
+//     b: 22
+// };
+console.log(userData);
+// complex object
+var complexo1 = {
+    data: [100, 3.99, 10],
+    output: function (all) {
+        return this.data;
+    }
+};
+var complexo2 = {
+    data: [100, 3.99, 10],
+    output: function (all) {
+        return this.data;
+    }
+};
+console.log(complexo2);
+// union types
+var myRealAge;
+myRealAge = 36;
+// myRealAge = '36';
+console.log(myRealAge);
+// check types
+var finalValue = 30;
+if (typeof finalValue == "number") {
+    console.log("Final value is a number");
+}
+// never
+function neverReturns() {
+    throw new Error("An error");
+}
+// nullable types
+var canBeNull = 12;
+canBeNull = null;
+console.log(canBeNull);
